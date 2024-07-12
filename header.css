@@ -1,0 +1,102 @@
+body{
+  font-family: arial;
+
+  padding-top: 61px;
+  height: 1000px;
+}
+.header{
+  position: fixed;
+  height: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px;
+  border-bottom: 60px;
+  border: solid;
+  border-color: #eeeeee;
+  background-color: rgb(151, 67, 230);
+  z-index: 1000;
+  
+}
+.left-section,.right-section{
+  padding: 5px;
+}
+.middle-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 450px;
+}
+
+.header-logo{
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  object-position: center;
+}
+.search-box{
+  width: 350px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  margin: 4px;
+  padding: 5px 10px;
+  border: none; 
+  position: relative;
+  align-items: flex-start;
+}
+.search-box::placeholder{
+  padding-left: 10px;
+}
+.ham-logo{
+  width: 40px;
+  height: 38px;
+  position: relative;
+}
+.right-section .tooltip{
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  background-color: grey;
+  padding: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  
+}
+.right-section:hover .tooltip{
+  opacity: 1;
+}
+
+.search-logo{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 17px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+.mid .tooltip{
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  background-color: grey;
+  padding: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  bottom: 5;
+  
+}
+.mid:hover .tooltip{
+  opacity: 1;
+}
